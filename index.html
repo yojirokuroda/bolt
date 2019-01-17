@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="This is my portfolio site.">
     <meta name="keyword" content="bolt, bootstrap, portfolio">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
     <title>Bolt - Free Bootstrap 3 Theme</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/base.css">
@@ -16,7 +17,12 @@
     <header class="header">
       <div class="inner clearfix">
         <i class="fa fa-bolt fa-3x bolt"></i>
-        <a href="" class="Contact">Contact</a>
+        <a href="" class="contact">Contact</a>
+        <div class="nav-drawer">
+          <span class="nav-line"></span>
+          <span class="nav-line"></span>
+          <span class="nav-line"></span>
+        </div>
       </div>
     </header>
     <main class="main">
@@ -26,41 +32,42 @@
           <p>FREE BOOTSTRAP THEMES</p>
         </div>
       </div>
-      <article class="article">
+      <section class="cando">
         <div class="inner flex">
-          <div class="article-content-left">
+          <div class="cando-content-left">
             <img src="img/iphone.png" alt="">
           </div>
-          <div class="article-content-right">
-            <h2 class="article-title">WHAT WE CAN DO?</h2>
+          <div class="cando-content-right">
+            <h2 class="cando-title">WHAT WE CAN DO?</h2>
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
           </div>
         </div>
-      </article>
+      </section>
 
-      <section class="portfolio">
+      <article class="portfolio">
         <div class="inner">
           <h2>OUR LATEST WORK</h2>
-          <div class="flex">
+          <div class="flex manyworks">
             <div class="works">
-              <a href="#"><img src="img/01.jpg" alt=""></a>
+              <a href="#" class="works-contents"><img src="img/01.jpg" alt=""></a>
             </div>
             <div class="works">
-              <a href="#"><img src="img/02.jpg" alt=""></a>
+              <a href="#" class="works-contents"><img src="img/02.jpg" alt=""></a>
             </div>
             <div class="works">
-              <a href="#"><img src="img/03.jpg" alt=""></a>
+              <a href="#" class="works-contents"><img src="img/03.jpg" alt=""></a>
             </div>
             <div class="works">
-              <a href="#"><img src="img/04.jpg" alt=""></a>
+              <a href="#" class="works-contents"><img src="img/04.jpg" alt=""></a>
             </div>
             <div class="works">
-              <a href="#"><img src="img/05.jpg" alt=""></a>
+              <a href="#" class="works-contents"><img src="img/05.jpg" alt=""></a>
             </div>
             <div class="works">
-              <a href="#"><img src="img/06.jpg" alt=""></a>
+              <a href="#" class="works-contents"><img src="img/06.jpg" alt=""></a>
             </div>
           </div>
+
           <div class="flex portfolio-content">
             <div class="portfolio-left">
               <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.</p>
@@ -70,12 +77,12 @@
             </div>
           </div>
         </div>
-      </section>
+      </article>
 
       <section class="skills">
         <div class="inner">
           <h2>OUR SKILLS</h2>
-          <div class="flex skills-content">
+          <figure class="flex skills-content">
             <div class="skills-contents">
               <img src="img/circle_01.png" alt="">
               <p class="skills_text">Javascript</p>
@@ -92,7 +99,7 @@
               <img src="img/circle_04.png" alt="">
               <p class="skills_text">Photoshop</p>
             </div>
-          </div>
+          </figure>
         </div>
       </section>
       <nav class="social">
