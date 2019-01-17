@@ -1,5 +1,12 @@
 @charset "UTF-8";
 
+@media screen and (max-width: 766px)　{
+}
+@media screen and (min-width: 1200x)　{
+}
+@media screen and (min-width: 767px) and (max-width:1199px){
+}
+
 .clearfix::after{
   content: "";
   display: block;
