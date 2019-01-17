@@ -1,5 +1,38 @@
 @charset "UTF-8";
 
+.clearfix::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+
+a{
+  display: inline-block;
+  text-decoration: none
+}
+
+p{
+  font-size: 20px;
+  font-family: "Raleway";
+  line-height: 24px;
+}
+
+h1 {
+  font-size: 90px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  color: #74cfae;
+}
+
+h2 {
+  font-size: 24px;
+  font-family: "Raleway";
+}
+
+body{
+  font-family:"Raleway";
+}
+
 .header{
   position: fixed;
   top: 0px;
@@ -10,6 +43,16 @@
   padding: 15px;
 }
 
+.main{
+  padding-top: 78px;
+}
+
+.title .inner p {
+  font-size: 30px;
+  color: #c0c0c0;
+  margin-top: 20px;
+}
+
 .inner{
   width:1100px;
   margin: 0 auto;
@@ -18,17 +61,22 @@
 
 .flex{
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  flex-wrap:wrap;
 }
 
-.centered {
-  text-align: center;
+.works:nth-child(-n+3){
+  margin: 40px 0 80px;
 }
 
-.fa.fa-bolt{
+.bolt{
   float: left;
   color: #777;
+}
+
+.bolt:hover{
+  cursor: pointer;
 }
 
 .Contact{
@@ -40,42 +88,17 @@
 }
 
 .title{
-  width: 100%;
   padding-top: 250px;
   padding-bottom: 250px;
   background-color: #f2f2f2;
 }
 
-h1 {
-  font-size: 90px;
-  font-weight: 700;
-  letter-spacing: 3px;
-  color: #74cfae;
-}
-
-h2 {
-  font-size: 30px;
-  color: #c0c0c0;
-  margin-top: 20px;
-}
-
-h3 {
-  font-size: 24px;
-  font-family: "Raleway";
-}
-
-p{
-  font-size: 20px;
-  font-family: "Raleway";
-  line-height: 24px;
-}
-
 .article{
   background-color:#74cfae;
+  padding-top: 50px;
 }
 
 .article-content-left{
-  padding-top: 50px;
   width: 40%;
   font-size: 0;
 }
@@ -84,38 +107,28 @@ p{
   line-height: 24px;
   color:#FFF;
   width: 60%;
+  padding-bottom: 50px;
 }
 
 .article-title{
   margin-bottom: 35px;
 }
 
-.container{
-  display: grid;
-  content: " ";
-  padding: 60px 0 70px;
-  width:1100px;
-  margin: 0 auto;
-}
-
 .portfolio{
   background-color: #f2f2f2;
+  padding:60px 0 70px;
 }
 
-.mt{
-  margin-top:40px;
+.portfolio-content{
+  margin-top: 90px;
 }
 
-.works{
-  float:left;
-  width: 33.33%;
-}
-
-.grid img {
+.works a {
   opacity: .7;
+  transition-duration:.3s;
 }
 
-.grid img:hover {
+.works a:hover {
   opacity: 1;
 }
 
@@ -138,9 +151,14 @@ p{
 }
 
 .skills-content{
+  margin-top: 70px
+}
+
+.skills-contents{
   margin-left: 180px;
 }
-.skills-content:first-child{
+
+.skills-contents:first-child{
   margin-left: 0;
 }
 
@@ -149,7 +167,7 @@ p{
 }
 
 .social{
-  padding:200px;
+  padding:200px 0;
   background-color: #f2f2f2
 }
 
@@ -165,17 +183,20 @@ p{
   border: 5px solid transparent;
   border-radius: 0px;
 }
+
 .btn-theme {
   color: #ffffff;
   background-color: #74cfae;
   border-color: transparent;
 }
 
-.social-content{
+.social-content a{
   width: 185px;
   padding:10px;
+  transition-duration:.3s;
 }
-.social-content:hover{
+
+.social-content a:hover{
   background-color: #fff;
 }
 
@@ -187,6 +208,6 @@ p{
 .footer-text{
   text-align: right;
   font-size: 12px;
-  font-style: Lato;
+  font-family: Lato;
   color:#f2f2f2
 }
