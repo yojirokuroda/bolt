@@ -50,6 +50,7 @@ img{
 
 .main{
   margin-top: 78px;
+  text-align: center;
 }
 
 .bolt{
@@ -74,9 +75,7 @@ img{
   padding:60px 0 70px;
 }
 
-.portfolio-content{
-  margin-top: 90px;
-}
+
 
 .works-contents{
   opacity: .7;
@@ -147,7 +146,7 @@ img{
   .inner{
     width:97%;
     margin: 0 auto;
-    text-align: center;
+    /* text-align: center; */
   }
   .contact{
     display: none;
@@ -197,12 +196,13 @@ img{
     line-height: 24px;
     color:#FFF;
   }
+
   .manyworks{
     margin:40px 0 80px;
   }
 
-  .works:nth-child(3n+1){
-    margin-top: 80px;
+  .works:nth-child(3n){
+    margin-bottom: 80px;
   }
 
   .portfolio-right{
@@ -245,7 +245,7 @@ img{
   .inner{
     width:97%;
     margin: 0 auto;
-    text-align: center;
+    /* text-align: center; */
   }
 
   .title{
@@ -272,12 +272,16 @@ img{
     margin:40px 0 80px;
   }
 
-  .works:nth-child(3n+1){
-    margin-top: 80px;
+  .works:nth-child(3n){
+    margin-bottom: 80px;
   }
 
   .portfolio-right{
     margin-top:40px;
+  }
+
+  .portfolio-content{
+    margin-top: 80px;
   }
 
   .skills-contents{
@@ -322,7 +326,7 @@ img{
   .inner{
     max-width:1100px;
     margin: 0 auto;
-    text-align: center;
+    /* text-align: center; */
   }
   .flex{
     display: flex;
@@ -340,6 +344,7 @@ img{
   .cando{
     background-color:#74cfae;
     padding-top: 50px;
+    text-align: center;
   }
 
   .cando-title{
@@ -373,6 +378,10 @@ img{
 
   .portfolio-right{
     width: 40%;
+  }
+
+  .portfolio-content{
+    margin-top: 90px;
   }
 
   .skills-contents{
